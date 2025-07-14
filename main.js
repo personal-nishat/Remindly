@@ -39,7 +39,7 @@ function createWindow() {
     const isDev = process.env.NODE_ENV === 'development';
     const serverUrl = isDev ? 'http://localhost:5041' : 'https://app-push-notif-prod-b3vufhiqicj7a.azurewebsites.net';
     
-    mainWindow.loadURL(`${serverUrl}/frontend.html`);
+    mainWindow.loadURL(`${serverUrl}/desktop.html`);
 
     mainWindow.once('ready-to-show', () => {
         mainWindow.show();
