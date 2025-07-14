@@ -1,7 +1,9 @@
 {
   "type": "module",
   "dependencies": {
-    "web-push": "^3.6.7"
+    "web-push": "^3.6.7",
+    "electron": "^37.2.0",
+    "electron-builder": "^26.0.12"
   },
   "name": "meeting-notifications",
   "version": "1.0.0",
@@ -9,8 +11,9 @@
   "main": "main.js",
   "devDependencies": {
     "electron": "^37.2.0",
-    "electron-builder": "^26.0.12"
-  },
+    "electron-builder": "^26.0.12",
+    "web-push": "^3.6.7"
+  }
   "scripts": {
     "start": "electron .",
     "dev": "electron . --enable-logging",
