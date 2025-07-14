@@ -16,7 +16,7 @@
     "dev": "electron . --enable-logging",
     "build": "electron-builder",
     "build-win": "electron-builder --win",
-    "dist": "electron-builder --publish=never",
+    "dist": "electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "build": {
