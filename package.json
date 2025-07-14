@@ -28,15 +28,8 @@
     "files": [
       "main.js",
       "assets/**/*",
-      "wwwroot/**/*",
       "node_modules/**/*",
       "package.json"
-    ],
-    "extraResources": [
-      {
-        "from": "wwwroot",
-        "to": "wwwroot"
-      }
     ],
     "win": {
       "target": "portable",
