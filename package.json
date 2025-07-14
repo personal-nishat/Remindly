@@ -1,16 +1,15 @@
 {
   "type": "module",
-  "dependencies": {
-    "web-push": "^3.6.7"
-  },
-  "name": "meeting-notifications",
+  "name": "meeting-notifications", 
   "version": "1.0.0",
   "description": "Meeting notification desktop app with push notifications",
   "main": "main.js",
+  "dependencies": {
+    "web-push": "^3.6.7",
+    "electron": "^37.2.0"
+  },
   "devDependencies": {
-    "electron": "^37.2.1",
-    "electron-builder": "^26.0.12",
-    "web-push": "^3.6.7"
+    "electron-builder": "^26.0.12"
   },
   "scripts": {
     "start": "electron .",
@@ -20,60 +19,15 @@
     "dist": "electron-builder --publish=never",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "build": {
-    "appId": "com.company.meeting-notifications",
-    "productName": "Meeting Notifications",
-    "directories": {
-      "output": "dist"
-    },
-    "files": [
-      "main.js",
-      "assets/**/*",
-      "wwwroot/**/*",
-      "node_modules/**/*",
-      "package.json"
-    ],
-    "extraResources": [
-      {
-        "from": "wwwroot",
-        "to": "wwwroot"
-      }
-    ],
-    "win": {
-      "target": "portable",
-      "icon": "assets/icon.png"
-    },
-    "mac": {
-      "target": "dmg",
-      "icon": "assets/icon.icns"
-    },
-    "linux": {
-      "target": "AppImage",
-      "icon": "assets/icon.png"
-    },
-    "nsis": {
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true,
-      "createDesktopShortcut": true,
-      "createStartMenuShortcut": true,
-      "shortcutName": "Meeting Notifications"
-    }
-  },
+  "keywords": ["meeting", "notifications", "push", "electron", "desktop"],
+  "author": "Nishat Fatema",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/personal-nishat/notif-backend-service.git"
+    "url": "git+https://github.com/personal-nishat/Remindly.git"
   },
-  "keywords": [
-    "meeting",
-    "notifications",
-    "push",
-    "electron",
-    "desktop"
-  ],
-  "author": "Your Name",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/personal-nishat/notif-backend-service/issues"
+    "url": "https://github.com/personal-nishat/Remindly/issues"
   },
-  "homepage": "https://github.com/personal-nishat/notif-backend-service#readme"
+  "homepage": "https://github.com/personal-nishat/Remindly#readme"
 }
