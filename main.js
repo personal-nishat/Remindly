@@ -167,11 +167,11 @@ function showInteractiveConflictNotification(conflictId, meeting1Id, meeting2Id,
             actions: [
                 {
                     type: 'button',
-                    text: `Attend ${meeting1Id}`
+                    text: `${meeting1Id}`
                 },
                 {
                     type: 'button',
-                    text: `Attend ${meeting2Id}`
+                    text: `${meeting2Id}`
                 }
             ]
         });
